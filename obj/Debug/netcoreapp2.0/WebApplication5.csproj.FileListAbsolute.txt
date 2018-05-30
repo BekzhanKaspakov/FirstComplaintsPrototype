@@ -1,0 +1,11 @@
+c:\users\beks\source\repos\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.0\WebApplication5.deps.json
+c:\users\beks\source\repos\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.0\WebApplication5.runtimeconfig.json
+c:\users\beks\source\repos\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.0\WebApplication5.runtimeconfig.dev.json
+c:\users\beks\source\repos\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.0\WebApplication5.dll
+c:\users\beks\source\repos\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.0\WebApplication5.csprojAssemblyReference.cache
+c:\users\beks\source\repos\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.0\WebApplication5.csproj.CoreCompileInputs.cache
+c:\users\beks\source\repos\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.0\WebApplication5.AssemblyInfoInputs.cache
+c:\users\beks\source\repos\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.0\WebApplication5.AssemblyInfo.cs
+c:\users\beks\source\repos\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.0\WebApplication5.pdb
+c:\users\beks\source\repos\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.0\WebApplication5.dll
+c:\users\beks\source\repos\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.0\WebApplication5.pdb
