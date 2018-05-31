@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{7BC45D2E-F218-460C-A310-4AE9E7B4EBAC}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Data/DbInitializer.cs">
+    <Files>
+      <File FileName="appsettings.json" Line="3" Column="87" />
+      <File FileName="Models/Extended/UserMeta.cs" Line="9" Column="7" />
+      <File FileName="Views/Complaints/Create.cshtml" Line="22" Column="93" />
+      <File FileName="Views/Users/Index.cshtml" Line="19" Column="61" />
+      <File FileName="Models/User.cs" Line="5" Column="1" />
+      <File FileName="Controllers/ComplaintsController.cs" Line="75" Column="28" />
+      <File FileName="Controllers/UsersController.cs" Line="68" Column="8" />
+      <File FileName="Data/DbInitializer.cs" Line="43" Column="63" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.WebApplication5 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

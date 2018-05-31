@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 //namespace RegistrationAndLogin.Models.Extended
 namespace RegistrationAndLogin.Models
 {
-    [MetadataType(typeof(UserMetadata))]
+    //[MetadataType(typeof(UserMetadata))]
     public partial class User
     {
         public string ConfirmPassword { get; set; }

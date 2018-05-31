@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -58,10 +59,24 @@ namespace WebApplication5.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(user);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+				try
+				{
+					_context.Add(user);
+					await _context.SaveChangesAsync();
+					return RedirectToAction(nameof(Index));
+				}
+			    catch (SqlException ex)
+                {
+                    if (ex.Number == 2627)
+                    {
+
+					}
+                    else throw;
+                }
+                
             }
+
+
             return View(user);
         }
 

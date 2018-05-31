@@ -36,13 +36,13 @@ namespace WebApplication5.Data
 
             var Complaints = new Complaint[]
             {
-            new Complaint{UserID=1,ComplaintText="Chemistry"},
-            new Complaint{UserID=4,ComplaintText="Microeconomics"},
-            new Complaint{UserID=4,ComplaintText="Macroeconomics"},
-            new Complaint{UserID=1,ComplaintText="Calculus"},
-            new Complaint{UserID=3,ComplaintText="Trigonometry"},
-            new Complaint{UserID=2,ComplaintText="Composition"},
-            new Complaint{UserID=2,ComplaintText="Literature"}
+                new Complaint{UserID=1,ComplaintText="Nice"},
+				new Complaint{UserID=4,ComplaintText="Nice"},
+				new Complaint{UserID=4,ComplaintText="Nice"},
+				new Complaint{UserID=1,ComplaintText="Nice"},
+				new Complaint{UserID=3,ComplaintText="Nice"},
+				new Complaint{UserID=2,ComplaintText="Nice"},
+				new Complaint{UserID=2,ComplaintText="Nice"}
             };
             foreach (Complaint c in Complaints)
             {
