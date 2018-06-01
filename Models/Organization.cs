@@ -1,21 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations.Schema;
-using WebApplication5.Models;
 
 namespace WebApplication5.Models
 {
-    public class User
+    public class Organization
     {
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int UserID { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
         public int OrganizationID { get; set; }
-        public Organization Organization { get; set; }
+        public string OrganizationName { get; set; }
+
 
         public ICollection<Complaint> Complaints { get; set; }
+        public ICollection<User> Users { get; set; }
     }
 }

@@ -28,6 +28,10 @@
                 <span asp-validation-for="LastName" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="OrganizationID" class="control-label"></label>
+                <select asp-for="OrganizationID" class ="form-control" asp-items="ViewBag.OrganizationID"></select>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-default" />
             </div>
         </form>

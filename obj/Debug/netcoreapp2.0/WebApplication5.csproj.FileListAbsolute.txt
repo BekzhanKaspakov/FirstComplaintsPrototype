@@ -20,3 +20,25 @@ c:/users/beks/source/repos/WebApplication5/WebApplication5/obj/Debug/netcoreapp2
 /Users/bekzhankaspakov/Desktop/anotherProject/FirstComplaintsPrototype/bin/Debug/netcoreapp2.0/WebApplication5.pdb
 /Users/bekzhankaspakov/Desktop/anotherProject/FirstComplaintsPrototype/obj/Debug/netcoreapp2.0/WebApplication5.dll
 /Users/bekzhankaspakov/Desktop/anotherProject/FirstComplaintsPrototype/obj/Debug/netcoreapp2.0/WebApplication5.pdb
+C:\Users\Beks\source\repos\FirstComplaintsPrototype\bin\Debug\netcoreapp2.0\WebApplication5.deps.json
+C:\Users\Beks\source\repos\FirstComplaintsPrototype\bin\Debug\netcoreapp2.0\WebApplication5.runtimeconfig.json
+C:\Users\Beks\source\repos\FirstComplaintsPrototype\bin\Debug\netcoreapp2.0\WebApplication5.runtimeconfig.dev.json
+C:\Users\Beks\source\repos\FirstComplaintsPrototype\bin\Debug\netcoreapp2.0\WebApplication5.dll
+C:\Users\Beks\source\repos\FirstComplaintsPrototype\bin\Debug\netcoreapp2.0\WebApplication5.pdb
+C:\Users\Beks\source\repos\FirstComplaintsPrototype\obj\Debug\netcoreapp2.0\WebApplication5.csprojAssemblyReference.cache
+C:\Users\Beks\source\repos\FirstComplaintsPrototype\obj\Debug\netcoreapp2.0\WebApplication5.csproj.CoreCompileInputs.cache
+C:\Users\Beks\source\repos\FirstComplaintsPrototype\obj\Debug\netcoreapp2.0\WebApplication5.AssemblyInfoInputs.cache
+C:\Users\Beks\source\repos\FirstComplaintsPrototype\obj\Debug\netcoreapp2.0\WebApplication5.AssemblyInfo.cs
+C:\Users\Beks\source\repos\FirstComplaintsPrototype\obj\Debug\netcoreapp2.0\WebApplication5.dll
+C:\Users\Beks\source\repos\FirstComplaintsPrototype\obj\Debug\netcoreapp2.0\WebApplication5.pdb
+C:\Users\Beks\source\repos\Новая папка\WebApplication5\bin\Debug\netcoreapp2.0\WebApplication5.deps.json
+C:\Users\Beks\source\repos\Новая папка\WebApplication5\bin\Debug\netcoreapp2.0\WebApplication5.runtimeconfig.json
+C:\Users\Beks\source\repos\Новая папка\WebApplication5\bin\Debug\netcoreapp2.0\WebApplication5.runtimeconfig.dev.json
+C:\Users\Beks\source\repos\Новая папка\WebApplication5\bin\Debug\netcoreapp2.0\WebApplication5.dll
+C:\Users\Beks\source\repos\Новая папка\WebApplication5\bin\Debug\netcoreapp2.0\WebApplication5.pdb
+C:\Users\Beks\source\repos\Новая папка\WebApplication5\obj\Debug\netcoreapp2.0\WebApplication5.csprojAssemblyReference.cache
+C:\Users\Beks\source\repos\Новая папка\WebApplication5\obj\Debug\netcoreapp2.0\WebApplication5.csproj.CoreCompileInputs.cache
+C:\Users\Beks\source\repos\Новая папка\WebApplication5\obj\Debug\netcoreapp2.0\WebApplication5.AssemblyInfoInputs.cache
+C:\Users\Beks\source\repos\Новая папка\WebApplication5\obj\Debug\netcoreapp2.0\WebApplication5.AssemblyInfo.cs
+C:\Users\Beks\source\repos\Новая папка\WebApplication5\obj\Debug\netcoreapp2.0\WebApplication5.dll
+C:\Users\Beks\source\repos\Новая папка\WebApplication5\obj\Debug\netcoreapp2.0\WebApplication5.pdb

@@ -22,7 +22,7 @@ namespace WebApplication5.Controllers
         // GET: Complaints
         public async Task<IActionResult> Index()
         {
-            var websiteContext = _context.Complaints.Include(c => c.User);
+            var websiteContext = _context.Complaints.Include(c => c.Organization);
             return View(await websiteContext.ToListAsync());
         }
 
@@ -35,7 +35,7 @@ namespace WebApplication5.Controllers
             }
 
             var complaint = await _context.Complaints
-                .Include(c => c.User)
+                .Include(c => c.Organization)
                 .SingleOrDefaultAsync(m => m.ID == id);
             if (complaint == null)
             {
@@ -48,7 +48,7 @@ namespace WebApplication5.Controllers
         // GET: Complaints/Create
         public IActionResult Create()
         {
-            ViewData["UserID"] = new SelectList(_context.Users, "UserID", "UserID");
+            ViewData["OrganizationID"] = new SelectList(_context.Organization, "OrganizationID", "OrganizationID");
             return View();
         }
 
@@ -57,7 +57,7 @@ namespace WebApplication5.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,UserID,ComplaintText")] Complaint complaint)
+        public async Task<IActionResult> Create([Bind("ID,OrganizationID,ComplaintText")] Complaint complaint)
         {
             if (ModelState.IsValid)
             {
@@ -65,7 +65,7 @@ namespace WebApplication5.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserID"] = new SelectList(_context.Users, "UserID", "UserID", complaint.UserID);
+            ViewData["OrganizationID"] = new SelectList(_context.Organization, "OrganizationID", "OrganizationID", complaint.OrganizationID);
             return View(complaint);
         }
 
@@ -82,7 +82,7 @@ namespace WebApplication5.Controllers
             {
                 return NotFound();
             }
-            ViewData["UserID"] = new SelectList(_context.Users, "UserID", "UserID", complaint.UserID);
+            ViewData["OrganizationID"] = new SelectList(_context.Organization, "OrganizationID", "OrganizationID", complaint.OrganizationID);
             return View(complaint);
         }
 
@@ -91,7 +91,7 @@ namespace WebApplication5.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,UserID,ComplaintText")] Complaint complaint)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,OrganizationID,ComplaintText")] Complaint complaint)
         {
             if (id != complaint.ID)
             {
@@ -118,7 +118,7 @@ namespace WebApplication5.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserID"] = new SelectList(_context.Users, "UserID", "UserID", complaint.UserID);
+            ViewData["OrganizationID"] = new SelectList(_context.Organization, "OrganizationID", "OrganizationID", complaint.OrganizationID);
             return View(complaint);
         }
 
@@ -131,7 +131,7 @@ namespace WebApplication5.Controllers
             }
 
             var complaint = await _context.Complaints
-                .Include(c => c.User)
+                .Include(c => c.Organization)
                 .SingleOrDefaultAsync(m => m.ID == id);
             if (complaint == null)
             {
