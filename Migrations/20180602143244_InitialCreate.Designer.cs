@@ -11,7 +11,7 @@ using WebApplication5.Data;
 namespace WebApplication5.Migrations
 {
     [DbContext(typeof(WebsiteContext))]
-    [Migration("20180601063046_InitialCreate")]
+    [Migration("20180602143244_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -60,6 +60,8 @@ namespace WebApplication5.Migrations
                 {
                     b.Property<int>("UserID");
 
+                    b.Property<string>("Email");
+
                     b.Property<string>("FirstName");
 
                     b.Property<string>("LastName");
@@ -90,8 +92,7 @@ namespace WebApplication5.Migrations
 
                     b.HasOne("WebApplication5.Models.User")
                         .WithMany("Complaints")
-                        .HasForeignKey("UserID")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .HasForeignKey("UserID");
                 });
 
             modelBuilder.Entity("WebApplication5.Models.User", b =>

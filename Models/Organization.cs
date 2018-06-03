@@ -13,7 +13,7 @@ namespace WebApplication5.Models
         public string OrganizationName { get; set; }
 
 
-        public ICollection<Complaint> Complaints { get; set; }
-        public ICollection<User> Users { get; set; }
+        public ICollection<Complaint> Complaints = new List<Complaint>();
+        public ICollection<User> Users = new List<User>();
     }
 }

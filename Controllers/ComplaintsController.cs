@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -59,8 +63,65 @@ namespace WebApplication5.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,OrganizationID,ComplaintText")] Complaint complaint)
         {
+            
+
             if (ModelState.IsValid)
             {
+                System.Diagnostics.Debug.WriteLine("************HUIASASAASASASA*****************\n");
+
+                SqlConnection sqlConnection1 = new SqlConnection("Server=(localdb)\\mssqllocaldb;Database=NewDatabase;Trusted_Connection=True;MultipleActiveResultSets=true");
+                SqlCommand cmd = new SqlCommand();
+                SqlDataReader reader;
+
+                cmd.CommandText = $"SELECT Email FROM [User] WHERE OrganizationID = {complaint.OrganizationID}";
+                cmd.CommandType = CommandType.Text;
+                cmd.Connection = sqlConnection1;
+
+                sqlConnection1.Open();
+
+                reader = cmd.ExecuteReader();
+                // Data is accessible through the DataReader object here.
+                while (reader.Read())
+                {
+                    System.Diagnostics.Debug.WriteLine(String.Format("{0}", reader[0]));
+                    System.Diagnostics.Debug.WriteLine("************Message Sent*****************\n");
+                    MailMessage mail = new MailMessage();
+                    SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+
+                    mail.From = new MailAddress("bekzhan.kaspakov@gmail.com");
+                    mail.To.Add(String.Format("{0}", reader[0]));
+                    mail.Subject = "Test Mail";
+                    mail.Body = "This is for testing SMTP mail from GMAIL";
+
+
+                    SmtpServer.Port = 587;
+                    SmtpServer.Credentials = new System.Net.NetworkCredential("bekzhan.kaspakov", "watsamatsate98");
+                    SmtpServer.EnableSsl = true;
+
+                    SmtpServer.Send(mail);
+                    Console.WriteLine("Message Sent\n");
+                }
+                sqlConnection1.Close();
+              
+                //{
+                //    System.Diagnostics.Debug.WriteLine("************Message Sent*****************\n");
+                //    MailMessage mail = new MailMessage();
+                //    SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+
+                //    mail.From = new MailAddress("bekzhan.kaspakov@gmail.com");
+                //    mail.To.Add(u.Email);
+                //    mail.Subject = "Test Mail";
+                //    mail.Body = "This is for testing SMTP mail from GMAIL";
+
+
+                //    SmtpServer.Port = 587;
+                //    SmtpServer.Credentials = new System.Net.NetworkCredential("bekzhan.kaspakov", "watsamatsate98");
+                //    SmtpServer.EnableSsl = true;
+
+                //    SmtpServer.Send(mail);
+                //    Console.WriteLine("Message Sent\n");
+
+                //}
                 _context.Add(complaint);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

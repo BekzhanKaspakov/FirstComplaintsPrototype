@@ -59,6 +59,8 @@ namespace WebApplication5.Migrations
                 {
                     b.Property<int>("UserID");
 
+                    b.Property<string>("Email");
+
                     b.Property<string>("FirstName");
 
                     b.Property<string>("LastName");
@@ -89,8 +91,7 @@ namespace WebApplication5.Migrations
 
                     b.HasOne("WebApplication5.Models.User")
                         .WithMany("Complaints")
-                        .HasForeignKey("UserID")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .HasForeignKey("UserID");
                 });
 
             modelBuilder.Entity("WebApplication5.Models.User", b =>

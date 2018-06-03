@@ -26,6 +26,7 @@ namespace WebApplication5.Migrations
                 columns: table => new
                 {
                     UserID = table.Column<int>(nullable: false),
+                    Email = table.Column<string>(nullable: true),
                     FirstName = table.Column<string>(nullable: true),
                     LastName = table.Column<string>(nullable: true),
                     OrganizationID = table.Column<int>(nullable: false),
