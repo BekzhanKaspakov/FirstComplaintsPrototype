@@ -90,8 +90,8 @@ namespace WebApplication5.Controllers
 
                     mail.From = new MailAddress("bekzhan.kaspakov@gmail.com");
                     mail.To.Add(String.Format("{0}", reader[0]));
-                    mail.Subject = "Test Mail";
-                    mail.Body = "This is for testing SMTP mail from GMAIL";
+                    mail.Subject = "Complaint Mail";
+                    mail.Body = complaint.ComplaintText;
 
 
                     SmtpServer.Port = 587;
